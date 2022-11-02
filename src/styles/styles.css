@@ -1,0 +1,32 @@
+body {
+  background-image: url("https://images.unsplash.com/photo-1514995669114-6081e934b693?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.navbar,
+.footer {
+  background-color: #e5edb7;
+}
+
+.row {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.form {
+  width: 500px;
+  margin: 160px auto;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-color: #ffbcbc;
+  border-radius: 10px;
+}
+.inputF input {
+  border: none;
+  outline: none;
+  border: 1px solid #000;
+  padding: 10px;
+  border-radius: 7px;
+}
