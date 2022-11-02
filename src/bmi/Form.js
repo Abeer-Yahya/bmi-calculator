@@ -11,7 +11,7 @@ class Form extends Component {
     this.state = {
       weight: 0,
       height: 0,
-      bmiClass: " ",
+      bmiCat: " ",
       bmi: 0,
     };
   }
@@ -24,13 +24,13 @@ class Form extends Component {
     this.setState({ height: heightValue });
   };
 
-  computeBmi = () => {
+  calculateBmi = () => {
     let bmiValue =
       (this.state.weight / this.state.height / this.state.height) * 10000;
-    console.log(bmiValue);
+    // console.log(bmiValue);
     this.setState({ bmi: bmiValue });
-    let bmiClass = this.getBmi(bmiValue);
-    this.setState({ bmiClass: bmiClass });
+    let bmiCat = this.getBmi(bmiValue);
+    this.setState({ bmiCat: bmiCat });
   };
 
   getBmi(bmi) {
@@ -66,11 +66,11 @@ class Form extends Component {
         </div>
 
         <div className="w-100 d-flex justify-content-center">
-          <Button label="CALCULATE" onClick={this.computeBmi} />
+          <Button label="CALCULATE" onClick={this.calculateBmi} />
         </div>
 
         <div className="result m-2">
-          <Box bmi={this.state.bmi} bmiClass={this.state.bmiClass} />
+          <Box bmi={this.state.bmi} bmiCat={this.state.bmiCat} />
         </div>
       </div>
     );
