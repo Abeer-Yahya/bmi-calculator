@@ -30,3 +30,13 @@ body {
   padding: 10px;
   border-radius: 7px;
 }
+
+.btn {
+  background-color: #8bcdcd;
+  border: 1px solid #000;
+}
+
+.btn:hover {
+  background-color: #ffbcbc;
+  border: 1px solid #000;
+}

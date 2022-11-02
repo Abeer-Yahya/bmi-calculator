@@ -54,7 +54,7 @@ class Form extends Component {
         <div className="inputs d-flex">
           <TextInput
             label="Height"
-            placeholder="Enter height in meters"
+            placeholder="Enter height in cm"
             onChange={this.heightChanged}
           />
 
